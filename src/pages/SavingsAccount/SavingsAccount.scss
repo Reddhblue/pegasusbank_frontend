@@ -1,0 +1,61 @@
+@import "../../variables.scss";
+
+.background__savingsaccount {
+  background-color: $white;
+  padding: 10rem 9.2rem;
+
+  @media only screen and (max-width: $bp-1200) {
+    padding: 10rem 3rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-small) {
+    padding: 6rem 3rem;
+  }
+}
+
+.savingsaccount {
+  @media only screen and (max-width: $bp-1000) {
+    width: 66rem;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: $bp-800) {
+    width: 48rem;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: auto;
+    margin: 0;
+  }
+
+  div {
+    h2 {
+      color: $color10;
+      font-weight: 800;
+      font-size: 2.1rem;
+      line-height: 3rem;
+      text-align: center;
+
+      margin-bottom: 3rem;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  h3 {
+    color: $color10;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 3rem;
+
+    margin-top: 3rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+}

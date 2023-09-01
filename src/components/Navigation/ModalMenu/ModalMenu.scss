@@ -1,0 +1,31 @@
+@import "../../../variables.scss";
+
+.modalMenu {
+  padding: 1.4rem 2rem;
+  font-size: 1.3rem;
+
+  a {
+    color: rgb(63, 79, 88);
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+.modalMenu:hover {
+  cursor: pointer;
+
+  .modalMenu__icon {
+    color: $color9;
+  }
+}
+
+// .modalMenu p:hover,
+// .modalMenu p a:hover {
+//   color: $color9;
+// }
+
+.modalMenu:hover {
+  a {
+    color: $color9;
+  }
+}

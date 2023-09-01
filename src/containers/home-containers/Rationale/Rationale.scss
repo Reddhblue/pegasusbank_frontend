@@ -1,0 +1,67 @@
+@import "../../../variables.scss";
+
+.background__rationale {
+  background-color: $white;
+  padding: 10rem 9.2rem;
+
+  @media only screen and (max-width: $bp-1200) {
+    padding: 10rem 3rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-small) {
+    padding: 6rem 3rem;
+  }
+}
+
+.rationale {
+  @media only screen and (max-width: $bp-1000) {
+    width: 66rem;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: $bp-800) {
+    width: 48rem;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: auto;
+    margin: 0;
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 4rem;
+    color: $color10;
+    margin-bottom: 8rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      margin-bottom: 5rem;
+      font-size: 2.7rem;
+    }
+  }
+}
+
+.rationale__contents {
+  display: flex;
+  gap: 0 3rem;
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: $color10;
+    margin-top: 6rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    flex-direction: column;
+    gap: 3rem 0;
+  }
+}

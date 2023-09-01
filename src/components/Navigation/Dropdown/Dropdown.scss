@@ -1,0 +1,77 @@
+@import "../../../variables.scss";
+
+.dropdown {
+  font-size: 1.1rem;
+  color: $white;
+  font-weight: 100;
+  position: relative;
+  height: 5.32rem;
+
+  display: flex;
+  gap: 0 1rem;
+}
+
+.dropdown__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem 0;
+
+  &--info {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.dropdown__icon {
+  align-self: center;
+}
+
+.dropdown__content {
+  position: absolute;
+  background-color: $white;
+  width: 19rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  top: 100%;
+  display: none;
+
+  a {
+    height: 5rem;
+    display: block;
+    font-size: 1.3rem;
+    font-family: $font-primary;
+    color: $color1;
+    font-weight: 700;
+    padding: 12px 16px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color9;
+      color: $white;
+    }
+  }
+}
+
+.dropdown:hover {
+  cursor: pointer;
+
+  .dropdown__header p,
+  .dropdown__header a,
+  .dropdown__icon {
+    color: $color9;
+  }
+
+  .dropdown__content {
+    display: block;
+  }
+}

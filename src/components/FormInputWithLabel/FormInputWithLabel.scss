@@ -1,0 +1,24 @@
+@import "../../variables.scss";
+
+/* STYLING FOR INPUT TYPE === TEXT & PASSWORD  */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 1.3rem 1.6rem;
+  margin: 1.1rem 0;
+  border: 0.7px solid $color6;
+  border-radius: 0.5rem;
+}
+
+/* GENERAL STYLE FOR ALL INPUTS ON FOCUS */
+input:focus {
+  outline: 0.7px solid $color12;
+  box-shadow: 0 0 0 3px rgba(9, 113, 254, 0.1);
+}
+
+/* GENERAL STYLES FOR ALL PLACEHOLDERS */
+::placeholder {
+  color: $color14;
+  font-size: 1.5rem;
+  font-weight: 400;
+}

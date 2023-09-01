@@ -1,0 +1,76 @@
+@import "../../../variables.scss";
+
+.background__solutioncontent {
+  background-color: $white;
+  padding: 10rem 9.2rem;
+
+  @media only screen and (max-width: $bp-1200) {
+    padding: 10rem 3rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-small) {
+    padding: 6rem 3rem;
+  }
+}
+
+.solutioncontent {
+  @media only screen and (max-width: $bp-1000) {
+    width: 66rem;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: $bp-800) {
+    width: 48rem;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: auto;
+    margin: 0;
+  }
+
+  h2 {
+    color: $color10;
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 4rem;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  &__heading {
+    color: $color10;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 3rem;
+
+    margin-top: 3rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+}
+
+.solutioncontent__card {
+  margin-top: 6rem;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-1100) {
+    gap: 0 3rem;
+  }
+
+  @media only screen and (max-width: $bp-1000) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem 0;
+  }
+}

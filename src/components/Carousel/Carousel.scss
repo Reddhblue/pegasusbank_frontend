@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+
+.carousel {
+  width: 52.5rem;
+  height: 35rem;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-1000) {
+    width: 66rem;
+    height: 44rem;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: $bp-800) {
+    width: 48rem;
+    height: 32rem;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+}
+
+.carousel__img {
+  width: 100%;
+  transition: transform 0.6s ease-in;
+}
+
+.carousel__icon {
+  color: $white;
+  font-size: 2.4rem;
+  position: absolute;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.carousel__icon--left {
+  left: 1.2rem;
+}
+
+.carousel__icon--right {
+  right: 1.2rem;
+}

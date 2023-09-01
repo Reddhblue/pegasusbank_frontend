@@ -1,0 +1,36 @@
+@import "./variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+  // @media only screen and (max-width: $bp-largest) {
+  //   font-size: 56.25%; // 9px/16px = 56.25% -> 1rem = 9px
+  // }
+
+  @media only screen and (max-width: $bp-mobile-small) {
+    font-size: 59.375%; // 9.5px/16px = 50% -> 1rem = 9.5px
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+  color: $color1;
+  // font-weight: 500;
+}
+
+.enclosure {
+  @media only screen and (min-width: $bp-max) {
+    max-width: 1300px;
+    margin: auto;
+  }
+}

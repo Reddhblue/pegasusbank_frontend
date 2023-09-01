@@ -1,0 +1,24 @@
+@import "../../variables.scss";
+
+.footer__doc {
+  display: flex;
+  gap: 0 1.6rem;
+
+  &--font {
+    font-size: 1.5rem;
+    color: #0ca2ad;
+    align-self: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color4;
+  }
+
+  &:hover {
+    .footer__doc--font {
+      transform: translateX(0.8rem);
+      transition: transform 0.5s ease;
+    }
+  }
+}

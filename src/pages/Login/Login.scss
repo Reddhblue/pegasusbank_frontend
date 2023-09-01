@@ -1,0 +1,91 @@
+@import "../../variables.scss";
+
+.login {
+  //   height: 100vh;
+  min-height: 100vh;
+  background-image: url(assets/login.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__form {
+  background-color: $white;
+  border: 1px solid $color6;
+  border-radius: 0.4rem;
+
+  width: 478.667px;
+  // height: 59.4771rem;
+  padding: 4rem;
+
+  font-family: $font-roboto;
+  color: $color13;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  @media only screen and (max-width: $bp-mobile-small) {
+    padding: 8rem;
+  }
+
+  h2 {
+    color: $color11;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: $font-nunito;
+    font-weight: 700;
+    margin-bottom: 1.9rem;
+  }
+}
+
+.login__form--password {
+  position: relative;
+  margin-top: 2.5rem;
+  margin-bottom: 1.9rem;
+
+  a {
+    color: $color12;
+    font-size: 1.2rem;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    top: 2px;
+  }
+}
+
+.login__form--submit {
+  margin-top: 3rem;
+  margin-bottom: 2.6rem;
+
+  button {
+    cursor: pointer;
+    background-color: #1f2b3a;
+    width: 100%;
+    padding: 1.1rem 2.4rem;
+    border: none;
+    border-radius: 5px;
+
+    /* fonts */
+    font-family: $font-nunito;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $white;
+  }
+}
+
+.login__form--sign_up {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: $font-color;
+  font-weight: 400;
+
+  a {
+    text-decoration: none;
+    color: $color15;
+  }
+}
