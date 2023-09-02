@@ -14,6 +14,7 @@ import Investment from "./pages/Investment/Investment";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 import Login from "./pages/Login/Login";
+import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 
 import {
   createBrowserRouter,
@@ -39,6 +40,7 @@ const router = createBrowserRouter(
       <Route path="/investment" element={<Investment />} />
 
       <Route path="/login" element={<Login />} />
+      <Route path="/recoverpassword" element={<ForgotPassword />} />
 
       <Route path="*" element={<ErrorPage />} />
     </Route>

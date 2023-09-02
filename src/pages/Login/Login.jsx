@@ -19,28 +19,13 @@ const Login = () => {
 
         {/* <!-- Password --> */}
         <div className="login__form--password">
-          <NavLink to="#">Forgot Password?</NavLink>
+          <NavLink to="/recoverpassword">Forgot Password?</NavLink>
           <FormInputWithLabel
             label="Password"
             type="password"
             placeholder="Enter Password"
           />
         </div>
-
-        {/*
-        <!-- Checkbox --> 
-        <div className="login__form--checkbox">
-          <input
-            type="checkbox"
-            className="custom-control-input"
-            name="remember"
-            id="remember"
-          />
-          <label className="custom-control-label" htmlFor="remember">
-            Remember Me
-          </label>
-        </div>
-      */}
 
         {/* <!-- Submit Button --> */}
         <div className="login__form--submit">
