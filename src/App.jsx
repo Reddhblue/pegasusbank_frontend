@@ -22,6 +22,7 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
+import SignUp from "./pages/SignUp/SignUp";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -41,6 +42,7 @@ const router = createBrowserRouter(
 
       <Route path="/login" element={<Login />} />
       <Route path="/recoverpassword" element={<ForgotPassword />} />
+      <Route path="/signup" element={<SignUp />} />
 
       <Route path="*" element={<ErrorPage />} />
     </Route>

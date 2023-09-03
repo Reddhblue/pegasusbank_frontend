@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+
+/* STYLING FOR THE COUNTRY SELECTOR */
+.country_select {
+  width: 100%;
+  padding: 13px 16px;
+  margin: 11px 0;
+  border: 0.7px solid #dbdfea;
+  border-radius: 5px;
+}
+
+.country_select:focus {
+  outline: 0.7px solid #43c9db;
+  box-shadow: 0 0 0 3px rgba(9, 113, 254, 0.1);
+}

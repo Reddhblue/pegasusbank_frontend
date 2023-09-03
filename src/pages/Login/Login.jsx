@@ -34,7 +34,7 @@ const Login = () => {
 
         {/* <!-- Open a New Account --> */}
         <div className="login__form--sign_up">
-          Are you new? <NavLink to="#">Open an account</NavLink>
+          Are you new? <NavLink to="/signup">Open an account</NavLink>
         </div>
       </form>
 
