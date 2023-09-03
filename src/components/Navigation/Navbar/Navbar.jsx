@@ -47,7 +47,7 @@ const navbarData = [
   {
     id: 5,
     name: "E-BANKING",
-    link: "contact",
+    link: ["/login", "/signup"],
     description: "Account Access",
     hasItems: true,
     items: ["Login", "Register"],
@@ -105,7 +105,9 @@ const Navbar = () => {
           )}
         </div>
 
-        <button className="navbar__button">New Here?</button>
+        <NavLink to="/signup" className="navbar__button">
+          New Here?
+        </NavLink>
       </div>
     </div>
   );

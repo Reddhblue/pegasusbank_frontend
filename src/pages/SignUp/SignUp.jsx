@@ -7,6 +7,10 @@ import CountrySelector from "../../components/CountrySelector/CountrySelector";
 const SignUp = () => {
   return (
     <div className="signup">
+      <NavLink to="/" className="logo">
+        <img src="/assets/logo1.png" alt="logo" />
+      </NavLink>
+
       <form action="" className="signup__form">
         <h2>Onboarding</h2>
 

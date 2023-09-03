@@ -5,6 +5,10 @@ import "./ForgotPassword.scss";
 const ForgotPassword = () => {
   return (
     <div className="forgotpassword">
+      <NavLink to="/" className="logo">
+        <img src="/assets/logo1.png" alt="logo" />
+      </NavLink>
+
       <form action="" className="forgotpassword__form">
         <h2>Reset Account Password</h2>
 
@@ -29,7 +33,9 @@ const ForgotPassword = () => {
 
         {/* <!-- Link To Home --> */}
         <div className="forgotpassword__form--link">
-          <NavLink to="/login">Click Here To Login</NavLink>
+          <p>
+            Click <NavLink to="/login"> Here </NavLink>To Login
+          </p>
         </div>
       </form>
 
