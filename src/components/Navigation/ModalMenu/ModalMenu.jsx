@@ -1,13 +1,20 @@
 /* eslint-disable react/prop-types */
 
+import NavAccordion from "../NavAccordion/NavAccordion";
+
 import "./ModalMenu.scss";
 
 const ModalMenu = (props) => {
   return (
     <div className="modalMenu">
-      <p>
-        <a href="#">{props.name}</a>
-      </p>
+      <NavAccordion
+        id={props.id}
+        name={props.name}
+        items={props.items}
+        link={props.link}
+        isOpen={props.isOpen}
+        onClick={props.onClick}
+      />
     </div>
   );
 };

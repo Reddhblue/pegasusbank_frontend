@@ -10,27 +10,20 @@ const Dropdown = (props) => {
   return (
     <div className="dropdown">
       <div className="dropdown__header">
-        {props.hasItems && <p>{props.name}</p>}
-        {!props.hasItems && (
-          <p>
-            <NavLink to="/contact">{props.name}</NavLink>
-          </p>
-        )}
+        <p>{props.name}</p>
+
         <div className="dropdown__header--info">{props.description}</div>
       </div>
-      {props.hasItems && (
-        <FontAwesomeIcon icon={faAngleDown} className="dropdown__icon" />
-      )}
 
-      {props.hasItems && (
-        <div className="dropdown__content">
-          {props.items.map((item, index) => (
-            <NavLink key={Math.random()} to={props.link[index]}>
-              {item}
-            </NavLink>
-          ))}
-        </div>
-      )}
+      <FontAwesomeIcon icon={faAngleDown} className="dropdown__icon" />
+
+      <div className="dropdown__content">
+        {props.items.map((item, index) => (
+          <NavLink key={Math.random()} to={props.link[index]}>
+            {item}
+          </NavLink>
+        ))}
+      </div>
     </div>
   );
 };

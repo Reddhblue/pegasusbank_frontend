@@ -39,9 +39,10 @@ const navbarData = [
   {
     id: 4,
     name: "HELP",
-    link: "contact",
+    link: ["/contact"],
     description: "Contact Us",
-    hasItems: false,
+    hasItems: true,
+    items: ["Contact Us"],
   },
 
   {
@@ -56,10 +57,19 @@ const navbarData = [
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
+  const [openAccordionIndex, setOpenAccordionIndex] = useState(null);
 
   function clickHandler() {
     setClicked((prevState) => !prevState);
   }
+
+  const handleAccordionClick = (index) => {
+    if (index === openAccordionIndex) {
+      setOpenAccordionIndex(null);
+    } else {
+      setOpenAccordionIndex(index);
+    }
+  };
 
   return (
     <div className="background__nav">
@@ -75,7 +85,6 @@ const Navbar = () => {
               id={data.id}
               name={data.name}
               description={data.description}
-              hasItems={data.hasItems}
               items={data.items}
               link={data.link}
             />
@@ -90,15 +99,15 @@ const Navbar = () => {
           />
           {clicked && (
             <div className="navbar__burgerMenu--item">
-              {navbarData.map((data) => (
+              {navbarData.map((data, index) => (
                 <ModalMenu
                   key={data.id}
                   id={data.id}
                   name={data.name}
-                  description={data.description}
-                  hasItems={data.hasItems}
                   items={data.items}
                   link={data.link}
+                  isOpen={index === openAccordionIndex}
+                  onClick={() => handleAccordionClick(index)}
                 />
               ))}
             </div>
