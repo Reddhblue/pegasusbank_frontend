@@ -18,7 +18,7 @@ const ForgotPassword = () => {
         </p>
 
         {/*  <!-- Username or Email --> */}
-        <div>
+        <div className="mg-top">
           <FormInputWithLabel
             label="Username or Email"
             type="text"

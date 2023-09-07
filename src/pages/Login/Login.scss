@@ -39,7 +39,7 @@
   border: 1px solid $color6;
   border-radius: 0.4rem;
 
-  max-width: 478.667px;
+  width: 478.667px;
   // height: 59.4771rem;
   padding: 4rem;
 
@@ -54,6 +54,7 @@
   }
 
   @media only screen and (max-width: $bp-mobile-small) {
+    max-width: 100%;
     padding: 2rem;
   }
 
