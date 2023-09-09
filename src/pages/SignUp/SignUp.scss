@@ -41,7 +41,6 @@
   @media only screen and (max-width: $bp-1000) {
     flex-direction: column;
     justify-content: flex-start;
-    gap: 2rem 0;
   }
 
   div {
@@ -108,10 +107,6 @@
   }
 }
 
-.signup__form--password {
-  position: relative;
-}
-
 .signup__form--submit {
   margin-top: 3rem;
   margin-bottom: 2.6rem;
@@ -162,6 +157,15 @@
   color: #3a8dfe;
 }
 
-.mg-sm {
-  margin-bottom: 2rem;
+.select {
+  width: 100%;
+  padding: 13px 16px;
+  margin: 0.5rem 0 1.3rem;
+  border: 0.7px solid #dbdfea;
+  border-radius: 5px;
+}
+
+.select:focus {
+  outline: 0.7px solid #43c9db;
+  box-shadow: 0 0 0 3px rgba(9, 113, 254, 0.1);
 }

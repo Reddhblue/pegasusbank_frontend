@@ -3,10 +3,25 @@
 /* STYLING FOR INPUT TYPE === TEXT & PASSWORD  */
 input[type="text"],
 input[type="password"],
-input[type="tel"] {
+input[type="tel"],
+input[type="date"],
+input[type="email"] {
   width: 100%;
   padding: 1.3rem 1.6rem;
-  margin: 1.1rem 0;
+  margin: 0.5rem 0 1.3rem;
+  border: 0.7px solid $color6;
+  border-radius: 0.5rem;
+}
+
+input[type="file"] {
+  width: 100%;
+  margin: 0.5rem 0 1.3rem;
+  border: 0.7px solid $color6;
+  border-radius: 0.5rem;
+}
+
+::-webkit-file-upload-button {
+  padding: 1.3rem 1.6rem;
   border: 0.7px solid $color6;
   border-radius: 0.5rem;
 }
