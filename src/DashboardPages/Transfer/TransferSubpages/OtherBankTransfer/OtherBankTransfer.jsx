@@ -26,7 +26,7 @@ const OtherBankTransfer = () => {
           <DashboardForm
             label="Beneficiary Bank"
             type="text"
-            placeholder="Eg: Wells Fargo"
+            placeholder="Eg: WellsFargo"
           />
         </div>
 

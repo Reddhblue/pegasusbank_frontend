@@ -32,7 +32,11 @@ const Transfer = () => {
           {/*  INTRA BANK TRANSFER --> */}
           <NavLink
             to="/dashboard/transfer/same-bank"
-            className="transfer__type--selector_box"
+            className={({ isActive }) =>
+              isActive
+                ? "active__transfer transfer__type--selector_box"
+                : "transfer__type--selector_box"
+            }
           >
             <h4>Uni Bank</h4>
             <p>Send to Uni Bank account number</p>
@@ -41,7 +45,11 @@ const Transfer = () => {
           {/*  INTER BANK TRANSFER --> */}
           <NavLink
             to="/dashboard/transfer/other-bank"
-            className="transfer__type--selector_box"
+            className={({ isActive }) =>
+              isActive
+                ? "active__transfer transfer__type--selector_box"
+                : "transfer__type--selector_box"
+            }
           >
             <h4>Other Banks</h4>
             <p>Send to non Uni Bank account number</p>
@@ -50,7 +58,11 @@ const Transfer = () => {
           {/*  FOREIGN TRANSFER --> */}
           <NavLink
             to="/dashboard/transfer/foreign"
-            className="transfer__type--selector_box"
+            className={({ isActive }) =>
+              isActive
+                ? "active__transfer transfer__type--selector_box"
+                : "transfer__type--selector_box"
+            }
           >
             <h4>Foreign Transfer</h4>
             <p>Send to international bank account</p>

@@ -3,13 +3,20 @@ import "./AccountInfo.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import DashboardForm from "../../Dashboard Components/DashboardForm/DashboardForm";
+import { useRef } from "react";
 
 const AccountInfo = () => {
   return (
     <div className="accountinfo">
       <h2>PROFILE SETTINGS</h2>
 
-      {/* <div className="accountinfo__profilpic"></div> */}
+      {/* Profile Pic */}
+      <div className="accountinfo__profilepic">
+        <img
+          src="/assets/no-picture-available-icon-20.jpg"
+          className="accountinfo__profilepic--img"
+        />
+      </div>
 
       <div className="accountinfo__profiledata">
         <div className="accountinfo__profiledata--header">

@@ -81,3 +81,17 @@
     }
   }
 }
+
+.accountinfo__profilepic {
+  // border-radius: 50%;
+  position: relative;
+  margin: 4rem auto;
+  width: fit-content;
+  z-index: 1;
+
+  &--img {
+    max-width: 20rem;
+    height: auto;
+    border-radius: 50%;
+  }
+}
