@@ -17,9 +17,9 @@ $color12: #43c9db;
 $color13: #344357;
 $color14: #b6c6e3;
 $color15: #3a8dfe;
+$color16: #6e82a5;
 $secondary-color: #f5f6fa;
 $heading-color: #364a63;
-$link-color: #6e82a5;
 $border-color: #e5e9f2;
 $font-color: #526484;
 $primary-color: #00bdc7;
@@ -31,7 +31,8 @@ $font-nunito: "Nunito Sans", sans-serif;
 $font-roboto: "Roboto", sans-serif;
 
 // RESPONSIVE BREAKPOINTS
-$bp-max: 81.25em; // 1300px
+$bp-1400: 87.5em; // 1400px
+$bp-1300: 81.25em; // 1300px
 $bp-1200: 75em; // 1200px
 $bp-1100: 68.75em; // 1100px
 $bp-1000: 62.5em; // 1000px

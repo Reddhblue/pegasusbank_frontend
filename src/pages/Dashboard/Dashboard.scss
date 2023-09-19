@@ -1,0 +1,193 @@
+@import "../../variables.scss";
+
+.dashboard {
+  display: flex;
+  //   min-height: 100vh;
+}
+
+.dashboard__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+// DESKTOP NAVIGATION
+.dashboard__content--nav {
+  background-color: $white;
+  border-bottom: 1px solid $border-color;
+  height: 6.4rem;
+  position: sticky;
+  top: 0;
+  right: 0;
+
+  padding: 0 2.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0 1.6rem;
+
+  @media only screen and (max-width: $bp-1000) {
+    display: none;
+  }
+
+  &_profilepic {
+    img {
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 50px;
+    }
+  }
+
+  &_userprofile {
+    font-family: $font-roboto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0;
+
+    &-username {
+      color: $color15;
+      font-size: 1.1rem;
+      line-height: 1.1rem;
+      font-weight: 500;
+    }
+
+    &-greeting {
+      color: $font-color;
+      font-size: 1.2rem;
+      line-height: 16px;
+      font-weight: 700;
+    }
+  }
+}
+
+// MOBILE NAVIGATION
+.dashboard__content--mobilenav {
+  background-color: $white;
+  border-bottom: 1px solid $border-color;
+  height: 6.4rem;
+  position: sticky;
+  top: 0;
+  right: 0;
+
+  padding: 0 2.2rem;
+  z-index: 8;
+
+  display: none;
+
+  @media only screen and (max-width: $bp-1000) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 1.6rem;
+  }
+
+  &_icon {
+    // margin-right: auto;
+    font-size: 2.4rem;
+
+    @media only screen and (max-width: $bp-mobile-small) {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      color: $color9;
+    }
+  }
+
+  &_sidebar {
+    position: absolute;
+    top: 6.4rem;
+    left: 0;
+  }
+
+  &_logo {
+    width: 19.6rem;
+    height: 2.1rem;
+
+    @media only screen and (max-width: $bp-mobile-small) {
+      width: 15rem;
+    }
+
+    a {
+      width: 19.6rem;
+      height: 2.1rem;
+
+      @media only screen and (max-width: $bp-mobile-small) {
+        width: 15rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &_profile {
+    display: flex;
+    align-items: center;
+    // margin-left: auto;
+    gap: 0 1.6rem;
+
+    &-pic {
+      img {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50px;
+      }
+    }
+
+    &-user {
+      font-family: $font-roboto;
+
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem 0;
+
+      @media only screen and (max-width: $bp-mobile) {
+        display: none;
+      }
+
+      &_username {
+        color: $color15;
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+        font-weight: 500;
+      }
+
+      &_greeting {
+        color: $font-color;
+        font-size: 1.2rem;
+        line-height: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 6.4rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  // display: none;
+}
+
+// FOOTER
+.dashboard__footer {
+  border-top: 1px solid $border-color;
+  padding: 2rem 2.2rem;
+  font-family: $font-roboto;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  color: $overview-text;
+
+  a {
+    color: $color11;
+  }
+}

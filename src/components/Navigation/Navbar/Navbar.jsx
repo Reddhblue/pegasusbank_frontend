@@ -114,7 +114,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <NavLink to="/signup" className="navbar__button">
+        <NavLink to="/dashboard" className="navbar__button">
           New Here?
         </NavLink>
       </div>

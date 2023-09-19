@@ -21,7 +21,7 @@ const SignUp = () => {
       <form action="" className="signup__form">
         <h2>Onboarding</h2>
 
-        {/* <!-- Passport --> */}
+        {/* <!-- location option --> */}
         <div>
           <div>
             <label>Are You A USA Citizen?</label>
