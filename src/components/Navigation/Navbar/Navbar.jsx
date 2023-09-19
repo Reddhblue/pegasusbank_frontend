@@ -74,7 +74,7 @@ const Navbar = () => {
   return (
     <div className="background__nav">
       <div className="enclosure navbar">
-        <NavLink to="/">
+        <NavLink to="/dashboard">
           <img src="/assets/logo3.png" alt="company-logo" />
         </NavLink>
 
@@ -114,7 +114,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <NavLink to="/dashboard" className="navbar__button">
+        <NavLink to="/signup" className="navbar__button">
           New Here?
         </NavLink>
       </div>
