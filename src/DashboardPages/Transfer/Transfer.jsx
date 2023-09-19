@@ -21,7 +21,7 @@ const Transfer = () => {
             to="/dashboard/transfer/own-account"
             className={({ isActive }) =>
               isActive
-                ? "active transfer__type--selector_box"
+                ? "active__transfer transfer__type--selector_box"
                 : "transfer__type--selector_box"
             }
           >
