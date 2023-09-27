@@ -1,9 +1,9 @@
 import "./AccountInfo.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faLink } from "@fortawesome/free-solid-svg-icons";
 import DashboardForm from "../../Dashboard Components/DashboardForm/DashboardForm";
-import { useRef } from "react";
+import { NavLink } from "react-router-dom";
 
 const AccountInfo = () => {
   return (
@@ -14,6 +14,7 @@ const AccountInfo = () => {
       <div className="accountinfo__profilepic">
         <img
           src="/assets/no-picture-available-icon-20.jpg"
+          alt="Profile-Pic"
           className="accountinfo__profilepic--img"
         />
       </div>
@@ -30,57 +31,76 @@ const AccountInfo = () => {
             <DashboardForm
               label="First Name"
               type="text"
-              placeholder="First Name"
+              value="John"
+              uneditable="readonly"
             />
 
             <DashboardForm
               label="Last Name"
               type="text"
-              placeholder="Last Name"
+              value="Doe"
+              uneditable="readonly"
             />
           </div>
 
-          {/* Phone number & Email --> */}
+          {/* Mobile & Email --> */}
           <div className="accountinfo__profiledata--form_flex">
             <DashboardForm
               label="Mobile"
               type="tel"
-              placeholder="+1(324)-882-0034"
+              value="+1(324)-882-0034"
+              uneditable="readonly"
             />
 
             <DashboardForm
               label="Email"
               type="email"
-              placeholder="Example@domain.com"
+              value="Example@domain.com"
+              uneditable="readonly"
             />
           </div>
 
           {/*  City & State --> */}
           <div className="accountinfo__profiledata--form_flex">
-            <DashboardForm label="City" type="text" placeholder="City" />
-
-            <DashboardForm label="State" type="text" placeholder="State" />
-          </div>
-
-          {/*  Street Address & Country --> */}
-          <div className="accountinfo__profiledata--form_flex">
             <DashboardForm
-              label="Street Address"
+              label="City"
               type="text"
-              placeholder="Address"
+              value="City"
+              uneditable="readonly"
             />
 
             <DashboardForm
-              label="Country"
+              label="State"
               type="text"
-              value="Selected Country"
+              value="State"
+              uneditable="readonly"
+            />
+          </div>
+
+          {/* Account Type & Banking ID --> */}
+          <div className="accountinfo__profiledata--form_flex">
+            <DashboardForm
+              label="Account Type"
+              type="text"
+              value="put acc type"
+              uneditable="readonly"
+            />
+
+            <DashboardForm
+              label="Banking ID"
+              type="text"
+              value="put banking ID"
               uneditable="readonly"
             />
           </div>
 
           {/* <!-- Submit Button --> */}
           <div className="accountinfo__profiledata--button">
-            <button type="submit">Update Profile</button>
+            <NavLink to="/dashboard/update-account-info">
+              <button type="submit">
+                <FontAwesomeIcon icon={faLink} /> Update Profile
+              </button>
+            </NavLink>
           </div>
         </form>
       </div>

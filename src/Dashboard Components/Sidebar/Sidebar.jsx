@@ -8,6 +8,7 @@ import {
   faPaperPlane,
   faLayerGroup,
   faRightFromBracket,
+  faFileLines,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
@@ -40,14 +41,14 @@ const Sidebar = () => {
           link="/dashboard/transfer"
         />
         <MenuItem
-          title="Fixed Deposit"
-          icon={faLayerGroup}
-          link="/dashboard/fixed-deposit"
-        />
-        <MenuItem
           title="Investment"
           icon={faLayerGroup}
           link="/dashboard/investments"
+        />
+        <MenuItem
+          title="Statement"
+          icon={faFileLines}
+          link="/dashboard/statement"
         />
         <MenuItem title="Cards" icon={faLayerGroup} link="/dashboard/cards" />
         <MenuItem title="Logout" icon={faRightFromBracket} link="/login" />

@@ -10,7 +10,7 @@ const OverviewStats = (props) => {
       <h3>{props.header}</h3>
       <p>{props.amount}</p>
       <NavLink to={props.link}>
-        {props.action} <FontAwesomeIcon icon={faAngleRight} />{" "}
+        {props.action} <FontAwesomeIcon icon={faAngleRight} />
       </NavLink>
     </div>
   );

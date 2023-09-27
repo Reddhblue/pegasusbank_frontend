@@ -19,7 +19,9 @@ import SignUp from "./pages/SignUp/SignUp";
 
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Overview from "./DashboardPages/Overview/Overview";
+
 import AccountInfo from "./DashboardPages/AccountInfo/AccountInfo";
+import UpdateAccountInfo from "./DashboardPages/UpdateAccountInfo/UpdateAccountInfo";
 
 import Transfer from "./DashboardPages/Transfer/Transfer";
 import OwnAccountTransfer from "./DashboardPages/Transfer/TransferSubpages/OwnAccountTransfer/OwnAccountTransfer";
@@ -27,9 +29,14 @@ import TransferToSameBank from "./DashboardPages/Transfer/TransferSubpages/Trans
 import OtherBankTransfer from "./DashboardPages/Transfer/TransferSubpages/OtherBankTransfer/OtherBankTransfer";
 import ForeignTransfer from "./DashboardPages/Transfer/TransferSubpages/ForeignTransfer/ForeignTransfer";
 
-import FixedDeposit from "./DashboardPages/FixedDeposit/FixedDeposit";
-import BankCards from "./DashboardPages/BankCards/BankCards";
 import BankInvestment from "./DashboardPages/BankInvestment/BankInvestment";
+import NewDeposit from "./DashboardPages/BankInvestment/BankInvestmentSubpages/NewDeposit/NewDeposit";
+import WithdrawInterest from "./DashboardPages/BankInvestment/BankInvestmentSubpages/WithdrawIntrerest/WithdrawInterest";
+
+import Statement from "./DashboardPages/Statement/Statement";
+
+import BankCards from "./DashboardPages/BankCards/BankCards";
+import RequestCard from "./DashboardPages/BankCards/BankCardsSubpages/RequestCard/RequestCard";
 
 import {
   createBrowserRouter,
@@ -37,6 +44,8 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
+import CreditCard from "./DashboardPages/BankCards/BankCardsSubpages/CreditCard/CreditCard";
+import DebitCard from "./DashboardPages/BankCards/BankCardsSubpages/DebitCard/DebitCard";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -61,6 +70,10 @@ const router = createBrowserRouter(
       <Route path="/dashboard" element={<Dashboard />}>
         <Route path="/dashboard/overview" element={<Overview />} />
         <Route path="/dashboard/account-info" element={<AccountInfo />} />
+        <Route
+          path="/dashboard/update-account-info"
+          element={<UpdateAccountInfo />}
+        />
 
         <Route path="/dashboard/transfer" element={<Transfer />}>
           <Route
@@ -81,9 +94,27 @@ const router = createBrowserRouter(
           />
         </Route>
 
-        <Route path="/dashboard/fixed-deposit" element={<FixedDeposit />} />
-        <Route path="/dashboard/investments" element={<BankInvestment />} />
-        <Route path="/dashboard/cards" element={<BankCards />} />
+        <Route path="/dashboard/investments" element={<BankInvestment />}>
+          <Route
+            path="/dashboard/investments/new-deposit"
+            element={<NewDeposit />}
+          />
+          <Route
+            path="/dashboard/investments/withdrawal"
+            element={<WithdrawInterest />}
+          />
+        </Route>
+
+        <Route path="/dashboard/statement" element={<Statement />} />
+
+        <Route path="/dashboard/cards" element={<BankCards />}>
+          <Route
+            path="/dashboard/cards/request-card"
+            element={<RequestCard />}
+          />
+          <Route path="/dashboard/cards/credit-card" element={<CreditCard />} />
+          <Route path="/dashboard/cards/debit-card" element={<DebitCard />} />
+        </Route>
       </Route>
 
       <Route path="*" element={<ErrorPage />} />

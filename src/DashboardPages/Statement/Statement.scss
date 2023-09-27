@@ -1,6 +1,6 @@
 @import "../../variables.scss";
 
-.accountinfo {
+.statement {
   padding: 3.2rem 2.4rem;
 
   h2 {
@@ -9,6 +9,7 @@
     font-size: 3.5rem;
     color: $heading-color;
     line-height: 5rem;
+    margin-bottom: 2rem;
 
     @media only screen and (max-width: $bp-mobile) {
       font-size: 2.4rem;
@@ -16,7 +17,7 @@
   }
 }
 
-.accountinfo__profiledata {
+.statement__table {
   border: 1px solid $border-color;
   border-radius: 0.6rem;
 
@@ -69,7 +70,7 @@
       cursor: pointer;
       background-color: #1f2b3a;
       //   width: 100%;
-      padding: 1.1rem 2rem;
+      padding: 1.1rem 2.4rem;
       border: none;
       border-radius: 5px;
 
@@ -82,16 +83,18 @@
   }
 }
 
-.accountinfo__profilepic {
-  // border-radius: 50%;
-  position: relative;
-  margin: 4rem auto;
-  width: fit-content;
-  z-index: 1;
+.statement__table--form_select {
+  select {
+    display: block;
+    width: 100%;
+    padding: 1.1rem 1.2rem;
+    margin: 0.5rem 0 1.3rem;
+    border: 0.7px solid $color6;
+    border-radius: 0.5rem;
 
-  &--img {
-    max-width: 20rem;
-    height: auto;
-    border-radius: 50%;
+    &:focus {
+      outline: 0.7px solid $color12;
+      box-shadow: 0 0 0 3px rgba(9, 113, 254, 0.1);
+    }
   }
 }

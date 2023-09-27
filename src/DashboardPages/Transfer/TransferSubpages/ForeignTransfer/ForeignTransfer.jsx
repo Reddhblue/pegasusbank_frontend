@@ -13,7 +13,7 @@ const ForeignTransfer = () => {
       </div>
 
       <form className="foreign__transfer--form">
-        {/*  Source Account & Destination Account --> */}
+        {/*  Source Account & Beneficiary Bank --> */}
         <div className="foreign__transfer--form_flex">
           <div className="foreign__transfer--form_select">
             <label>Source Account</label>
@@ -45,18 +45,33 @@ const ForeignTransfer = () => {
           />
         </div>
 
-        {/* Country & Bank City --> */}
+        {/* SWIFT/BIC & Country --> */}
         <div className="foreign__transfer--form_flex">
+          <DashboardForm
+            label="SWIFT/BIC"
+            type="text"
+            placeholder="SWIFT/BIC"
+          />
+
           <DashboardForm
             label="Country"
             type="text"
             placeholder="Enter Country"
           />
+        </div>
 
+        {/* Bank City & Bank Branch --> */}
+        <div className="foreign__transfer--form_flex">
           <DashboardForm
             label="Bank City"
             type="text"
             placeholder="Enter City"
+          />
+
+          <DashboardForm
+            label="Bank Branch"
+            type="text"
+            placeholder="Bank Address"
           />
         </div>
 

@@ -1,24 +1,20 @@
 @import "../../variables.scss";
 
-.accountinfo {
+.updateaccountinfo {
   padding: 3.2rem 2.4rem;
 
-  h2 {
+  a {
     font-family: $font-nunito;
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: 1.4rem;
     color: $heading-color;
-    line-height: 5rem;
-
-    @media only screen and (max-width: $bp-mobile) {
-      font-size: 2.4rem;
-    }
   }
 }
 
-.accountinfo__profiledata {
+.updateaccountinfo__profiledata {
   border: 1px solid $border-color;
   border-radius: 0.6rem;
+  margin-top: 2.5rem;
 
   &--header {
     font-family: $font-nunito;
@@ -68,30 +64,14 @@
     button {
       cursor: pointer;
       background-color: #1f2b3a;
-      //   width: 100%;
       padding: 1.1rem 2rem;
       border: none;
       border-radius: 5px;
 
-      /* fonts */
       font-family: $font-nunito;
       font-size: 1.5rem;
       font-weight: 700;
       color: $white;
     }
-  }
-}
-
-.accountinfo__profilepic {
-  // border-radius: 50%;
-  position: relative;
-  margin: 4rem auto;
-  width: fit-content;
-  z-index: 1;
-
-  &--img {
-    max-width: 20rem;
-    height: auto;
-    border-radius: 50%;
   }
 }
