@@ -47,7 +47,7 @@ const Overview = () => {
           header="LAST TRANSACTION"
           amount="$ 300,000.00"
           action="VIEW STATEMENT"
-          link="#"
+          link="/dashboard/statement"
         />
       </div>
 
