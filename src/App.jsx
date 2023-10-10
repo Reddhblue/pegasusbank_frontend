@@ -37,6 +37,8 @@ import Statement from "./DashboardPages/Statement/Statement";
 
 import BankCards from "./DashboardPages/BankCards/BankCards";
 import RequestCard from "./DashboardPages/BankCards/BankCardsSubpages/RequestCard/RequestCard";
+import CreditCard from "./DashboardPages/BankCards/BankCardsSubpages/CreditCard/CreditCard";
+import DebitCard from "./DashboardPages/BankCards/BankCardsSubpages/DebitCard/DebitCard";
 
 import {
   createBrowserRouter,
@@ -44,8 +46,6 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
-import CreditCard from "./DashboardPages/BankCards/BankCardsSubpages/CreditCard/CreditCard";
-import DebitCard from "./DashboardPages/BankCards/BankCardsSubpages/DebitCard/DebitCard";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
