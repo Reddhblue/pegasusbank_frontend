@@ -1,8 +1,48 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import FormInputWithLabel from "../../components/FormInputWithLabel/FormInputWithLabel";
 import "./Login.scss";
+import useForm from "../../custom_hooks/useForm";
+import { BASE_URL } from "../../constants";
+import { ErrorContext } from "../../context/errors";
+import { useContext, useEffect } from "react";
+import { AuthContext } from "../../context/AuthContext";
 
 const Login = () => {
+  const { setError } = useContext(ErrorContext);
+  const { updateToken } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const [formData, updateField, login, isLoading, formResponse, formError] =
+    useForm({
+      formData: {
+        email: "",
+        password: "",
+      },
+      submitOptions: {
+        method: "POST",
+        url: `${BASE_URL}/auth/signin`,
+      },
+    });
+
+  useEffect(() => {
+    if (!formResponse) return;
+    updateToken(formResponse.token);
+    if (formResponse.success) navigate("/dashboard");
+  }, [formResponse]);
+
+  useEffect(() => {
+    if (formError) setError({ message: formError?.message, show: true });
+  }, [formError]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    login();
+  };
+
+  useEffect(() => {
+    updateToken(null);
+  }, []);
+
   return (
     <div className="login">
       <NavLink to="/" className="logo">
@@ -12,12 +52,15 @@ const Login = () => {
       <form action="" className="login__form">
         <h2>Access your E-BANK</h2>
 
-        {/*  <!-- Username or Email --> */}
+        {/*  <!-- Email --> */}
         <div>
           <FormInputWithLabel
-            label="Username or Email"
+            label="Email"
             type="text"
-            placeholder="Username or Email"
+            placeholder="Email"
+            name="email"
+            value={formData.email}
+            onChange={(e) => updateField(e.target.name, e.target.value)}
           />
         </div>
 
@@ -28,12 +71,22 @@ const Login = () => {
             label="Password"
             type="password"
             placeholder="Enter Password"
+            name="password"
+            value={formData.password}
+            onChange={(e) => updateField(e.target.name, e.target.value)}
           />
         </div>
 
         {/* <!-- Submit Button --> */}
         <div className="login__form--submit">
-          <button type="submit">Login</button>
+          <button
+            disabled={isLoading}
+            type="submit"
+            className="disabled:opacity-80 disabled:cursor-not-allowed "
+            onClick={handleSubmit}
+          >
+            Login
+          </button>
         </div>
 
         {/* <!-- Open a New Account --> */}

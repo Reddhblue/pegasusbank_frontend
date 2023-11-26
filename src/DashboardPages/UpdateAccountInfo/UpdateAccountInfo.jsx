@@ -21,23 +21,23 @@ const UpdateAccountInfo = () => {
         <form className="updateaccountinfo__profiledata--form">
           {/*  UserName & Email --> */}
           <div className="updateaccountinfo__profiledata--form_flex">
-            <DashboardForm label="UserName" type="text" placeholder="John" />
+            {/* <DashboardForm label="UserName" type="text" placeholder="John" /> */}
 
             <DashboardForm
               label="Email"
               type="email"
               placeholder="Example@domain.com"
             />
-          </div>
 
-          {/* Mobile & Password --> */}
-          <div className="updateaccountinfo__profiledata--form_flex">
             <DashboardForm
               label="Mobile"
               type="tel"
               placeholder="+1(324)-882-0034"
             />
+          </div>
 
+          {/* Mobile & Password --> */}
+          <div className="updateaccountinfo__profiledata--form_flex">
             <DashboardForm
               label="Password"
               type="password"

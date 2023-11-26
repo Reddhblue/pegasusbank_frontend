@@ -1,10 +1,16 @@
 import "./CountrySelector.scss";
 
-const CountrySelector = () => {
+const CountrySelector = (props) => {
   return (
     <div>
       <label>Country</label>
-      <select className="country_select">
+      <select
+        className="country_select"
+        value={props.value}
+        name={props.name}
+        onChange={props.onChange}
+      >
+        <option value="">Please Select</option>
         <option data-mobile_code="93" value="Afghanistan" data-code="AF">
           Afghanistan
         </option>
