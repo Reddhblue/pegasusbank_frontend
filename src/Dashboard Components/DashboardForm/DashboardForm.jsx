@@ -7,8 +7,9 @@ const DashboardForm = (props) => {
       <input
         type={props.type}
         placeholder={props.placeholder}
-        readOnly={props.uneditable}
         value={props.value}
+        onChange={props.onChange}
+        disabled={props.disabled}
       />
     </div>
   );

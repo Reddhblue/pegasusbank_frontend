@@ -7,27 +7,6 @@ import axios from "axios";
 import { AuthContext } from "../../context/AuthContext";
 import formatTime from "../../lib/utils/formatTime";
 
-const values = [
-  {
-    id: "transaction-1",
-    date: "15/09/2023",
-    time: "04:45:04",
-    amount: 15000,
-    credit: false,
-    description:
-      "MC Loc Web Prch - ZEN015079328 -- 1XBET/3109351260 PSTK IKEJA",
-  },
-  {
-    id: "transaction-2",
-    date: "14/09/2023",
-    time: "12:45:57",
-    amount: 100000,
-    credit: true,
-    description:
-      "NIP/GTG/HYDROJUMP UK. LTD-OPERATIONSHYDROJUMP / WEST Sept.Transport Subsidy 24 WEST",
-  },
-];
-
 const Overview = () => {
   const [account, setAccount] = useState();
   const [transactions, setTransactions] = useState([]);
@@ -43,6 +22,8 @@ const Overview = () => {
       console.log(error);
     }
   };
+
+  useEffect(() => console.log(account), [account]);
 
   const getTransactions = async () => {
     try {
@@ -68,13 +49,13 @@ const Overview = () => {
       <div className="overview__status">
         <OverviewStats
           header="AVAILABLE BALANCE"
-          amount={`$ ${account?.balance.toFixed(2)}`}
+          amount={`$ ${account?.balance?.toFixed(2)}`}
           // action="CHECKING"
           link="#"
         />
         <OverviewStats
           header="LEDGER BALANCE"
-          amount={`$ ${account?.balance.toFixed(2)}`}
+          amount={`$ ${account?.balance?.toFixed(2)}`}
           // action="REQUEST LOAN"
           link="#"
         />

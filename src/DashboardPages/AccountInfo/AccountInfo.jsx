@@ -4,8 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser, faLink } from "@fortawesome/free-solid-svg-icons";
 import DashboardForm from "../../Dashboard Components/DashboardForm/DashboardForm";
 import { NavLink } from "react-router-dom";
+import { UserContext } from "../../context/UserDetailsContext";
+import { useContext } from "react";
 
 const AccountInfo = () => {
+  const { user } = useContext(UserContext);
+
   return (
     <div className="accountinfo">
       <h2>PROFILE SETTINGS</h2>
@@ -13,7 +17,7 @@ const AccountInfo = () => {
       {/* Profile Pic */}
       <div className="accountinfo__profilepic">
         <img
-          src="/assets/no-picture-available-icon-20.jpg"
+          src={user?.profile_img ?? "/assets/no-picture-available-icon-20.jpg"}
           alt="Profile-Pic"
           className="accountinfo__profilepic--img"
         />
@@ -31,15 +35,17 @@ const AccountInfo = () => {
             <DashboardForm
               label="First Name"
               type="text"
-              value="John"
-              uneditable="readonly"
+              value={user?.firstname}
+              disabled
+              name="firstname"
             />
 
             <DashboardForm
               label="Last Name"
               type="text"
-              value="Doe"
-              uneditable="readonly"
+              value={user?.lastname}
+              disabled
+              name="lastname"
             />
           </div>
 
@@ -48,15 +54,17 @@ const AccountInfo = () => {
             <DashboardForm
               label="Mobile"
               type="tel"
-              value="+1(324)-882-0034"
-              uneditable="readonly"
+              value={user?.phone}
+              disabled
+              name="phone"
             />
 
             <DashboardForm
               label="Email"
               type="email"
-              value="Example@domain.com"
-              uneditable="readonly"
+              name="email"
+              value={user?.email}
+              disabled
             />
           </div>
 
@@ -65,15 +73,17 @@ const AccountInfo = () => {
             <DashboardForm
               label="City"
               type="text"
-              value="City"
-              uneditable="readonly"
+              name="city"
+              value={user?.city}
+              disabled
             />
 
             <DashboardForm
               label="State"
               type="text"
-              value="State"
-              uneditable="readonly"
+              name="state"
+              value={user?.state}
+              disabled
             />
           </div>
 
@@ -82,15 +92,16 @@ const AccountInfo = () => {
             <DashboardForm
               label="Account Type"
               type="text"
-              value="put acc type"
-              uneditable="readonly"
+              name="account_type"
+              value={user?.account_type}
+              disabled
             />
 
             <DashboardForm
               label="Banking ID"
               type="text"
-              value="put banking ID"
-              uneditable="readonly"
+              value={user?.account_number}
+              disabled
             />
           </div>
 

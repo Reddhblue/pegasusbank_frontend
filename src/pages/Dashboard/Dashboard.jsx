@@ -4,11 +4,13 @@ import "./Dashboard.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import MobileSidebar from "../../Dashboard Components/MobileSidebar/MobileSidebar";
+import { UserContext } from "../../context/UserDetailsContext";
 
 const Dashboard = () => {
   const [clicked, setClicked] = useState(false);
+  const { user } = useContext(UserContext);
 
   function clickHandler() {
     setClicked((prevState) => !prevState);
@@ -25,18 +27,17 @@ const Dashboard = () => {
         <div className="dashboard__content--nav">
           <div className="dashboard__content--nav_profilepic">
             <img
-              src="/assets/wallpaperflare.com_wallpaper (7).jpg"
+              src={
+                user?.profile_img ??
+                "/assets/wallpaperflare.com_wallpaper (7).jpg"
+              }
               alt="profile-pic"
             />
           </div>
 
           <div className="dashboard__content--nav_userprofile">
-            <div className="dashboard__content--nav_userprofile-username">
-              johndoe11
-            </div>
-
             <div className="dashboard__content--nav_userprofile-greeting">
-              Welcome John Doe!
+              {user?.firstname} {user?.lastname}
             </div>
           </div>
         </div>

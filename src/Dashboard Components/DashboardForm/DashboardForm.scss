@@ -23,6 +23,10 @@
     box-shadow: 0 0 0 3px rgba(9, 113, 254, 0.1);
   }
 
+  input:disabled {
+    cursor: not-allowed;
+  }
+
   /* GENERAL STYLES FOR ALL PLACEHOLDERS */
   ::placeholder {
     color: $color14;

@@ -91,7 +91,10 @@
 
   &--img {
     max-width: 20rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
     height: auto;
     border-radius: 50%;
+    object-fit: cover;
   }
 }

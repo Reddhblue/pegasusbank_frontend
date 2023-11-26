@@ -65,6 +65,8 @@ const SignUp = () => {
 
   useEffect(() => {
     console.log(formData);
+    if (formData.isUsCitizen == 1 && formData.country !== "United States")
+      updateField("country", "United States");
   }, [formData]);
 
   return (
@@ -190,12 +192,16 @@ const SignUp = () => {
         {/* <!-- Country & State --> */}
         <div className="flex-container">
           {/* COUNRTY SELECTOR */}
-          <CountrySelector
-            value={formData.country}
-            name="country"
-            onChange={(e) => updateField(e.target.name, e.target.value)}
-            required
-          />
+          {formData.isUsCitizen == "1" ? (
+            <></>
+          ) : (
+            <CountrySelector
+              value={formData.country}
+              name="country"
+              onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
+            />
+          )}
 
           <div>
             <FormInputWithLabel

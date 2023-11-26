@@ -58,20 +58,17 @@
     }
   }
 
-  &--button {
+  button {
     margin-top: 0.8rem;
+    cursor: pointer;
+    background-color: #1f2b3a;
+    padding: 1.1rem 2rem;
+    border: none;
+    border-radius: 5px;
 
-    button {
-      cursor: pointer;
-      background-color: #1f2b3a;
-      padding: 1.1rem 2rem;
-      border: none;
-      border-radius: 5px;
-
-      font-family: $font-nunito;
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: $white;
-    }
+    font-family: $font-nunito;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $white;
   }
 }
