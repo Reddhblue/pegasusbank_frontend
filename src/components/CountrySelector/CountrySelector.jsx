@@ -9,6 +9,7 @@ const CountrySelector = (props) => {
         value={props.value}
         name={props.name}
         onChange={props.onChange}
+        required={props.required}
       >
         <option value="">Please Select</option>
         <option data-mobile_code="93" value="Afghanistan" data-code="AF">

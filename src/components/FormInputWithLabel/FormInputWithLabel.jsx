@@ -11,6 +11,7 @@ const FormInputWithLabel = (props) => {
         value={props.value}
         name={props.name}
         onChange={props.onChange}
+        required={props.required}
       />
     </Fragment>
   );

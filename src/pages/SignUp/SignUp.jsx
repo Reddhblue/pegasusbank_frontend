@@ -73,7 +73,7 @@ const SignUp = () => {
         <img src="/assets/logo1.png" alt="logo" />
       </NavLink>
 
-      <form action="" className="signup__form">
+      <form action="" className="signup__form" onSubmit={handleSubmit}>
         <h2>Onboarding</h2>
 
         {/* <!-- location option --> */}
@@ -85,6 +85,7 @@ const SignUp = () => {
               value={formData.isUsCitizen}
               name="isUsCitizen"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             >
               <option value={1}>Yes</option>
               <option value={0}>No</option>
@@ -102,6 +103,7 @@ const SignUp = () => {
               value={formData.firstname}
               name="firstname"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             />
           </div>
 
@@ -113,6 +115,7 @@ const SignUp = () => {
               value={formData.lastname}
               name="lastname"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             />
           </div>
         </div>
@@ -126,6 +129,7 @@ const SignUp = () => {
               value={formData.DOB}
               name="DOB"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             />
           </div>
 
@@ -139,6 +143,7 @@ const SignUp = () => {
                 value={formData.SSN}
                 name="SSN"
                 onChange={(e) => updateField(e.target.name, e.target.value)}
+                // required
               />
             </div>
           ) : (
@@ -165,6 +170,7 @@ const SignUp = () => {
               value={formData.email}
               name="email"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             />
           </div>
 
@@ -176,6 +182,7 @@ const SignUp = () => {
               value={formData.phone}
               name="phone"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             />
           </div>
         </div>
@@ -187,6 +194,7 @@ const SignUp = () => {
             value={formData.country}
             name="country"
             onChange={(e) => updateField(e.target.name, e.target.value)}
+            required
           />
 
           <div>
@@ -197,6 +205,7 @@ const SignUp = () => {
               value={formData.state}
               name="state"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             />
           </div>
         </div>
@@ -211,6 +220,7 @@ const SignUp = () => {
               value={formData.city}
               name="city"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             />
           </div>
 
@@ -222,6 +232,7 @@ const SignUp = () => {
               value={formData.street}
               name="street"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             />
           </div>
         </div>
@@ -235,6 +246,7 @@ const SignUp = () => {
               value={formData.id_type}
               name="id_type"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             >
               <option value="">Valid ID Type</option>
               <option value="driver's licence">Driver's Licence</option>
@@ -253,6 +265,7 @@ const SignUp = () => {
               value={formData.id_number}
               name="id_number"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             />
           </div>
         </div>
@@ -266,6 +279,7 @@ const SignUp = () => {
               value={formData.id_date_issued}
               name="id_date_issued"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             />
           </div>
 
@@ -276,6 +290,7 @@ const SignUp = () => {
               value={formData.id_date_expires}
               name="id_date_expires"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             />
           </div>
         </div>
@@ -289,6 +304,7 @@ const SignUp = () => {
               value={formData.gender}
               name="gender"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             >
               <option value="">Please Select</option>
               <option value="male">Male</option>
@@ -304,6 +320,7 @@ const SignUp = () => {
               value={formData.income_source}
               name="income_source"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             >
               <option value="">Select Income Source</option>
               <option value="employment income">Employment Income</option>
@@ -326,6 +343,7 @@ const SignUp = () => {
               value={formData.account_type}
               name="account_type"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             >
               <option value="">Account Type</option>
               <option value="checking account">Checking Account</option>
@@ -366,6 +384,7 @@ const SignUp = () => {
               value={formData.password}
               name="password"
               onChange={(e) => updateField(e.target.name, e.target.value)}
+              required
             />
           </div>
 
@@ -390,16 +409,17 @@ const SignUp = () => {
               // value={formData.image}
               name="image"
               onChange={(e) => updateField(e.target.name, e.target.files[0])}
+              required
             />
           </div>
         </div>
 
         {/* <!-- Submit Button --> */}
-        <div className="signup__form--submit">
-          <button type="submit" onClick={handleSubmit}>
-            Process Information
-          </button>
-        </div>
+        {/* <div className="signup__form--submit"> */}
+        <button type="submit" className="signup__form--submit">
+          Process Information
+        </button>
+        {/* </div> */}
 
         {/* <!-- Open a New Account --> */}
         <div className="sign_in">
