@@ -15,10 +15,10 @@ const SolutionsContent = () => {
           needs
         </h2>
         <p>
-          Universal Banks Solutions seeks to deliver exceptional outcomes by
+          Pegasus savings Solutions seeks to deliver exceptional outcomes by
           drawing on the full range of investment, technology, operational,
           governance, legal, consultancy and research capabilities across the
-          whole of Universal Banks. We understand that major investors
+          whole of Pegasus savings. We understand that major investors
           increasingly have needs that go beyond just financial returns. From
           pension funds needing to match income streams to liabilities, to
           insurance companies navigating regulatory capital constraints, to
@@ -31,7 +31,7 @@ const SolutionsContent = () => {
           important decisions need to be made and elements aligned to maximize
           the likelihood of your financial success. Whether it’s monitoring your
           portfolio and its fund managers or keeping tabs on tax code changes
-          and regulatory adjustments, at Universal Banks, we help remove the
+          and regulatory adjustments, at Pegasus savings, we help remove the
           worry of your financial life by coordinating all of these moving
           parts.
         </p>

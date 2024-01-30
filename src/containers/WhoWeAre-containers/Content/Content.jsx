@@ -6,7 +6,7 @@ const Content = () => {
       <div className="enclosure content">
         <h2>THE BANK</h2>
         <p>
-          We founded Universal Banks to set a new standard in investment
+          We founded Pegasus savings to set a new standard in investment
           management: curated, comprehensive, simple-to-use—and fit for you,
           with the belief that we all get ahead when nobody gets left behind. We
           are here for the millions of who've long been ignored — or even taken
@@ -17,10 +17,10 @@ const Content = () => {
           to do some or all of your banking on your computer, tablet, or
           smartphone.
         </p>
-        <h3>Universal Banks Setting the New Standard in Wealth Management</h3>
+        <h3>Pegasus savings Setting the New Standard in Wealth Management</h3>
         <p>
           It's time for banking system management to come out of the stone age.
-          Universal Banks is a private wealth experience — fit for you. There
+          Pegasus savings is a private wealth experience — fit for you. There
           are some investors that truly stand apart from the rest — iconic
           names, prescient thinkers, and prolific researchers. We make it our
           job to find those investment partners, and work with them to make
@@ -33,7 +33,7 @@ const Content = () => {
           client means being treated with personalized, high-touch support and
           targeted investing guidance that revolves around your needs and
           preferences. And finally, in a time when online investing content and
-          anonymous “advice” forums abound, universal banks is a place for you
+          anonymous “advice” forums abound, pegasus savings is a place for you
           to ask questions and get answers, straight from those managing your
           money. We aim to reimagine investing — from the very products that are
           available, to the client experience from beginning to end. Some

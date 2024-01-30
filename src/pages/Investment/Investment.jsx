@@ -40,7 +40,7 @@ const Investment = () => {
 
           <h3>We are fiduciaries:</h3>
           <p>
-            At Universal Banks, we were a fiduciary long before it became
+            At Pegasus savings, we were a fiduciary long before it became
             fashionable to say so. We sit on the same side of the table as our
             clients; there simply is no other way to do business that produces
             positive, long-term success for our clients. Your objectives must

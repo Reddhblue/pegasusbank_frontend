@@ -61,7 +61,7 @@ const Dashboard = () => {
 
           <div className="dashboard__content--mobilenav_logo">
             <NavLink to="/">
-              <img src="/assets/logo1.png" alt="logo" />
+              <img src="/assets/pegasuslogo.png" alt="logo" />
             </NavLink>
           </div>
 
@@ -89,7 +89,7 @@ const Dashboard = () => {
 
         <div className="dashboard__footer">
           <p>
-            ©2015-2023 <NavLink to="/">Universal Banks</NavLink>. All rights
+            ©2015-2023 <NavLink to="/">Pegasus savings</NavLink>. All rights
             reserved
           </p>
         </div>

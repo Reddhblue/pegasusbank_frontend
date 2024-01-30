@@ -6,7 +6,7 @@ const ForgotPassword = () => {
   return (
     <div className="forgotpassword">
       <NavLink to="/" className="logo">
-        <img src="/assets/logo1.png" alt="logo" />
+        <img src="/assets/pegasuslogo.png" alt="logo" />
       </NavLink>
 
       <form action="" className="forgotpassword__form">

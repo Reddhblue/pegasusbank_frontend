@@ -17,7 +17,7 @@ const Sidebar = () => {
       <div className="sidebar__nav">
         <div className="sidebar__nav--content">
           <NavLink to="/">
-            <img src="/assets/logo1.png" alt="logo" />
+            <img src="/assets/pegasuslogo.png" alt="logo" />
           </NavLink>
         </div>
       </div>

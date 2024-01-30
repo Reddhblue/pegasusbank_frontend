@@ -36,8 +36,9 @@
 }
 
 .navbar img {
-  height: 4rem;
-  width: 21.756rem;
+  max-width: 90px;
+
+  object-fit: contain;
 
   // align-self: center;
 

@@ -5,7 +5,7 @@ const Rationale = () => {
   return (
     <div className="background__rationale">
       <div className="enclosure rationale">
-        <h2>Why Universal Banks</h2>
+        <h2>Why Pegasus savings</h2>
         <div className="rationale__contents">
           <div>
             <StyledNumber number="1" />

@@ -75,7 +75,7 @@ const Navbar = () => {
     <div className="background__nav">
       <div className="enclosure navbar">
         <NavLink to="/dashboard">
-          <img src="/assets/logo3.png" alt="company-logo" />
+          <img src="/assets/pegasuslogo.png" alt="company-logo" className="nav__img" />
         </NavLink>
 
         <div className="navbar__list">

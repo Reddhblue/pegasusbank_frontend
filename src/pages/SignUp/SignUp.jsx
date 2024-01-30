@@ -72,7 +72,7 @@ const SignUp = () => {
   return (
     <div className="signup">
       <NavLink to="/" className="logo">
-        <img src="/assets/logo1.png" alt="logo" />
+        <img src="/assets/pegasuslogo.png" alt="logo" />
       </NavLink>
 
       <form action="" className="signup__form" onSubmit={handleSubmit}>

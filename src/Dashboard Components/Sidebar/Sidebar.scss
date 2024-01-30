@@ -51,7 +51,9 @@
       height: 2.1rem;
 
       img {
-        width: 100%;
+        max-width: 70px;
+        object-fit: contain;
+        margin: auto;
       }
     }
   }

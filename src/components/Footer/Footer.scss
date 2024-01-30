@@ -43,9 +43,9 @@
 
 .footer__socials {
   img {
-    width: 27.2rem;
-    height: 5rem;
-    margin-bottom: 3.8rem;
+    max-width: 130px;
+    object-fit: contain;
+    // margin-bottom: 3.8rem;
 
     @media only screen and (max-width: $bp-1000) {
       width: 52.8rem;

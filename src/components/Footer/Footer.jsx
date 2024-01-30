@@ -15,7 +15,7 @@ const Footer = () => {
     <div className="background__footer">
       <div className="enclosure footer">
         <div className="footer__socials">
-          <img src="/assets/logo3.png" alt="company-logo" />
+          <img src="/assets/pegasuslogo.png" alt="company-logo" />
 
           <p>A Smart Way to Bank and Grow Your Business</p>
 
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
 
           <div className="footer__socials--copyright">
-            ©2015 - 2023 <span>Universal Banks</span>. All Rights Reserved.
+            ©2015 - 2023 <span>Pegasus savings</span>. All Rights Reserved.
           </div>
         </div>
 

@@ -6,7 +6,7 @@ const SubHeader = (props) => {
       <div className="enclosure subheader">
         <div className="subheader__content">
           <h1>{props.heading}</h1>
-          <p>UNIVERSAL BANK</p>
+          <p>PEGASUS SAVINGS</p>
         </div>
       </div>
     </div>
