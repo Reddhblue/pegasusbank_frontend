@@ -75,7 +75,11 @@ const Navbar = () => {
     <div className="background__nav">
       <div className="enclosure navbar">
         <NavLink to="/dashboard">
-          <img src="/assets/pegasuslogo.png" alt="company-logo" className="nav__img" />
+          <img
+            src="/assets/pegasuslogo.png"
+            alt="company-logo"
+            className="nav__img"
+          />
         </NavLink>
 
         <div className="navbar__list">
@@ -114,9 +118,12 @@ const Navbar = () => {
           )}
         </div>
 
-        <NavLink to="/signup" className="navbar__button">
+        <a
+          href="https://pegasusavings.com/bank/account/auth/register?tc=1"
+          className="navbar__button"
+        >
           New Here?
-        </NavLink>
+        </a>
       </div>
     </div>
   );
