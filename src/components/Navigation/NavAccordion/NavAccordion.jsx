@@ -17,13 +17,9 @@ const NavAccordion = ({ name, items, isOpen, onClick, link }) => {
 
       {isOpen &&
         link.map((link, index) => (
-          <NavLink
-            to={link}
-            key={Math.random()}
-            className="navaccordion-content"
-          >
+          <a href={link} key={Math.random()} className="navaccordion-content">
             {items[index]}
-          </NavLink>
+          </a>
         ))}
     </div>
   );

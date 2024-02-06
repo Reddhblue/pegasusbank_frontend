@@ -19,7 +19,7 @@ const Culture = () => {
             <h2>Our Unique Culture</h2>
           </div>
           <p>
-            At UB, we're proudly different. Our people and culture are key to
+            At Pegasus Savings, we're proudly different. Our people and culture are key to
             our success, and to achieving our purpose of becoming most trusted
             presonal / SME business bank.
             <br />

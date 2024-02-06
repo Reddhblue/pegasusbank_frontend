@@ -58,7 +58,7 @@ const Forex = () => {
             political and geopolitical events which affect the supply and demand
             of forex. This creates daily volatility that may offer a forex
             trader new opportunities. Online trading platforms provided by
-            global brokers like UB mean you can trade from your phone, laptop,
+            global brokers like Pegasus Savings mean you can trade from your phone, laptop,
             tablet or PC.
           </p>
         </div>

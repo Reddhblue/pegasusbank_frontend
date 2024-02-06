@@ -13,7 +13,7 @@ const navbarData = [
     id: 1,
     name: "COMPANY",
     link: ["/about", "/solutions", "/fraudprevention"],
-    description: "UB",
+    description: "Pegasus Savings",
     hasItems: true,
     items: ["Who We Are", "Solutions", "Fraud Prevention"],
   },
@@ -48,7 +48,10 @@ const navbarData = [
   {
     id: 5,
     name: "E-BANKING",
-    link: ["/login", "/signup"],
+    link: [
+      "https://pegasusavings.com/bank/account/index",
+      "https://pegasusavings.com/bank/account/auth/register?tc=1",
+    ],
     description: "Account Access",
     hasItems: true,
     items: ["Login", "Register"],

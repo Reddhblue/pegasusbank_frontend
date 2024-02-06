@@ -19,7 +19,7 @@ const Footer = () => {
 
           <p>A Smart Way to Bank and Grow Your Business</p>
 
-          <em>info@dhbanking.com</em>
+          <em>info@pegasusavings.com</em>
 
           <div className="footer__socials--media">
             <a href="#">
